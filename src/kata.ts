@@ -5,6 +5,9 @@ export function isLeapYear(input: number): boolean {
   if (isDivisibleBy(input, 100)) {
     return false;
   }
+  if (isDivisibleBy(input, 4)) {
+    return true;
+  }
   return false;
 }
 

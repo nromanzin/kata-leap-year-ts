@@ -20,4 +20,10 @@ describe('Kata', () => {
     expect(isLeapYear(1900)).toBe(false);
     expect(isLeapYear(2100)).toBe(false);
   });
+
+  test('All years divisible by 4 but not by 100 ARE leap years', () => {
+    expect(isLeapYear(2008)).toBe(true);
+    expect(isLeapYear(2012)).toBe(true);
+    expect(isLeapYear(2016)).toBe(true);
+  });
 });
