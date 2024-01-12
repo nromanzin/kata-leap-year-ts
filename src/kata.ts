@@ -1,5 +1,11 @@
 export function isLeapYear(input: number): boolean {
-  return isDivisibleBy(input, 400);
+  if (isDivisibleBy(input, 400)) {
+    return true;
+  }
+  if (isDivisibleBy(input, 100)) {
+    return false;
+  }
+  return false;
 }
 
 function isDivisibleBy(input: number, divider: number): boolean {

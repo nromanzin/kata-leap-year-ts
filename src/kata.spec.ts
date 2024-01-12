@@ -13,4 +13,11 @@ describe('Kata', () => {
     expect(isLeapYear(2000)).toBe(true);
     expect(isLeapYear(2400)).toBe(true);
   });
+
+  test('All years divisible by 100 but not by 400 are NOT leap years', () => {
+    expect(isLeapYear(1700)).toBe(false);
+    expect(isLeapYear(1800)).toBe(false);
+    expect(isLeapYear(1900)).toBe(false);
+    expect(isLeapYear(2100)).toBe(false);
+  });
 });
