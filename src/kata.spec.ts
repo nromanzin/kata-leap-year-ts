@@ -26,4 +26,10 @@ describe('Kata', () => {
     expect(isLeapYear(2012)).toBe(true);
     expect(isLeapYear(2016)).toBe(true);
   });
+
+  test('All years not divisible by 4 are NOT leap years', () => {
+    expect(isLeapYear(2017)).toBe(false);
+    expect(isLeapYear(2018)).toBe(false);
+    expect(isLeapYear(2019)).toBe(false);
+  });
 });
